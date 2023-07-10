@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Anisur Personal Information</title>
+<meta content="noindex, nofollow" name="robots">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css">
+<script src="form.js"></script>
+</head>
+<body>
+<div class="content">
+<!-- Multistep Form -->
+<div class="main">
+<form action="" class="regform" method="get">
+<!-- Progress Bar -->
+<ul id="progressbar">
+<li class="active">Create Account</li>
+<li>Educational Profiles</li>
+<li>Personal Details</li>
+
+
+</ul>
+<hr>
+<!-- Fieldsets -->
+<fieldset id="first">
+<h2 class="title">Create your account</h2>
+<p class="subtitle">Step 1</p>
+<input class="text_field" name="email" placeholder="Email" type="text">
+<input class="text_field" name="pass" placeholder="Password" type="password">
+<input class="text_field" name="cpass" placeholder="Confirm Password" type="password">
+<input class="next_btn" name="next" type="button" value="Next">
+</fieldset>
+<fieldset>
+<h2 class="title">Educational Profiles</h2>
+<p class="subtitle">Step 2</p>
+<select class="options">
+<option>--Select Education--</option>
+<option>Post Graduate Diploma in IT</option>
+<option>Graduate</option>
+<option>HSC</option>
+<option>SSC</option>
+</select>
+<input class="text_field" name="grade" placeholder="Grade" type="text">
+<input class="text_field" name="pyear" placeholder="Passing Year" type="text">
+<input class="text_field" name="univ" placeholder="University" type="text">
+<input class="pre_btn" name="previous" type="button" value="Previous">
+<input class="next_btn" name="next" type="button" value="Next">
+</fieldset>
+<fieldset id="fs_m">
+<h2 class="title">Personal Details</h2>
+<p class="subtitle">Step 3</p>
+<input class="text_field" name="fullname" placeholder="Your Name" type="text">
+<input class="text_field" name="father's name" placeholder="Your Father's Name" type="text">
+<input class="text_field" name="mother's name" placeholder="Your Mother's Name" type="text">Your Date of Birth:
+<input class="text_field" name="date of birth" type="date">
+<input class="text_field" name="cont" placeholder="Contact" type="text">
+<label>Are you married?</label>
+<input class="rad" name="radio" onclick="onRadio()" type="radio">Yes
+<input class="rad" name="radio" type="radio">No
+
+<input class="pre_btn" type="button" value="Previous">
+<input  id="next_pd"  style="display:none" class="next_btn" name="next" type="button" value="Next">
+<input  id="btn_pd" class="submit_btn" type="submit" value="Submit">
+
+</fieldset>
+<fieldset id="mar">
+<h2 class="title">Marital Status</h2>
+<p class="subtitle">Step 4</p>
+<input class="text_field" name="wname" placeholder="Your Wife's Name" type="text">
+<input class="text_field" name="ch1name" placeholder="Your Child Name (no children write:NA)" type="text">
+<input class="text_field" name="ch2name" placeholder="Your Child Name (no children write:NA)" type="text">
+<textarea name="address" placeholder="Address"></textarea> 
+<input class="pre_btn" name="previous"  onclick="prev()" type="button" value="Previous">
+<input class="submit_btn" type="submit" value="Submit">
+</fieldset> 
+  
+  
+  
+</form>
+</div>
+</div>
+</body>
+</html>
